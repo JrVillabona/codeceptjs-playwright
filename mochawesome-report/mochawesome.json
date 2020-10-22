@@ -1,0 +1,174 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-13T14:14:14.388Z",
+    "end": "2020-03-13T14:14:19.004Z",
+    "duration": 4616,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "873bfa45-432a-4d56-ab09-a60cf741cc80",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+          "title": "login",
+          "fullFile": "/Users/jvillabona/Documents/Testing/automated/javascript/codeceptjs/codeceptjs-playwright/login_test.js",
+          "file": "/login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "login \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 554,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "d9396bac-578e-4cb1-bd2e-0279babf68f9",
+              "parentUUID": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "login \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "993f1859-dd7f-4e43-b10d-6e0baff78ed1",
+              "parentUUID": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "login \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "81653a27-bccb-4c6b-a75d-49848a0497f3",
+              "parentUUID": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "login \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "ccdca08e-d498-4059-ad13-c37f8ee14b4e",
+              "parentUUID": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login Zero Bank",
+              "fullTitle": "login: Login Zero Bank",
+              "timedOut": false,
+              "duration": 4053,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I.amOnPage('/');\nI.click('#signin_button');\nI.seeInCurrentUrl('/login.html');\nI.seeInTitle('Zero - Log in');\nI.fillField('#user_login', 'username');\nI.fillField('#user_password', 'password');\n// pause();\nI.click('Sign in');\nI.seeInTitle('Zero - Account Summary');\n// I.saveScreenshot('loggedIn.jpg');\nI.click('#account_activity_tab');\nI.see('Show Transactions');",
+              "err": {},
+              "uuid": "823e8c1d-b6b7-4f35-a496-bc464419da36",
+              "parentUUID": "525db6cb-35c5-4d79-a1ec-9ba8a8590436",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "823e8c1d-b6b7-4f35-a496-bc464419da36"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4053,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {},
+      "version": "4.1.0"
+    }
+  }
+}
