@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/JrVillabona/codeceptjs-playwright#readme",
   "devDependencies": {
-    "codeceptjs": "^2.5.0",
+    "codeceptjs": "^3.0.0",
     "playwright": "^0.11.1"
   },
   "dependencies": {
